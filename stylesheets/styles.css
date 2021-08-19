@@ -20,7 +20,7 @@ body {
 }
 
 .wrapper {
-    height: 90%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -76,8 +76,32 @@ nav img {
 /*Profile
 ----------------------*/
 
-main {
+.profile_main {
     margin: 1.5em auto;
+}
+
+.resume_main {
+    max-width: 650px;
+    margin: 0 auto
+}
+
+.section_heading h1 {
+    text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+    transition: text-decoration-color 300ms;
+}
+
+.section_heading h1:hover {
+    text-decoration-color: rgba(255, 255, 255, 1);
+}
+
+.section_heading {
+    text-align: center;
+}
+
+.section_heading h1 {
+    font: 60px/0 'Montserrat', sans-serif;
+    font-weight: 700;
+
 }
 
 main .display_inline {
@@ -244,6 +268,15 @@ footer {
 
 }
 
+@media screen and (max-width: 660px) {
+
+    .resume_embed {
+        max-width: 99%;
+        /*margin: 0 auto;*/
+    }
+
+}
+
 @media screen and (max-width: 590px) {
     * {
         font: 20px/1.2 'Inconsolata', monospace;
@@ -260,6 +293,7 @@ footer {
         font: 18px/1.2 'Inconsolata', monospace;
     }
 
+
     main .intro_wrapper h1 {
         font: 32px/0 'Montserrat', sans-serif;
         font-weight: 900;
@@ -275,6 +309,14 @@ footer {
         font: 18px/1.2 'Inconsolata', monospace;
     }
 
+    .navbar {
+        flex-direction: column;
+    }
+
+    nav .logo {
+        padding-top: .5em;
+    }
+
     main .intro_wrapper h1 {
         font: 32px/0 'Montserrat', sans-serif;
         font-weight: 900;
@@ -288,3 +330,31 @@ footer {
         transform: scale(1.1);
     }
 }
+
+
+@media screen and (max-width: 395px) {
+    * {
+        font: 14px/1.2 'Inconsolata', monospace;
+    }
+
+    main .intro_wrapper h1 {
+        font: 30px/0 'Montserrat', sans-serif;
+        font-weight: 900;
+    }
+
+    main .button_wrapper {
+        width: 15%;
+        position: relative;
+        bottom: 3em;
+        vertical-align: middle;
+        text-align: right;
+        text-decoration: none;
+    }
+
+    .button_wrapper .button_text {
+        font: 14px/1.2 'Inconsolata', monospace;
+        font-weight: 500;
+    }
+}
+
+
