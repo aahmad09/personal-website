@@ -7,7 +7,8 @@
 ----------------------*/
 
 html, body {
-    height: 100%;
+    height: 100vh;
+    /*overflow-x: hidden;*/
 }
 
 body {
@@ -19,20 +20,21 @@ body {
 }
 
 .wrapper {
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    /*justify-content: space-between;*/
 }
 
 img {
-    width: 100px;
+    width: 100px
 }
 
 /*Header/Navigation
 ----------------------*/
 
 header {
-    margin: 0 0 auto 0;
+    margin: 0;
 }
 
 nav {
@@ -59,11 +61,16 @@ nav {
 }
 
 nav img {
-    width: 80px
+    width: 80px;
+    padding-right: 20px;
 }
 
 /*Profile
 ----------------------*/
+
+main {
+    margin: 1.5em auto;
+}
 
 main .display_inline {
     display: inline-block;
@@ -72,6 +79,8 @@ main .display_inline {
 main .profile_wrapper {
     margin: auto;
     max-width: 1080px;
+    padding-top: .8em;
+    padding-bottom: .8em
 }
 
 main .intro_wrapper {
@@ -113,7 +122,7 @@ main .button_wrapper button {
 main .button_wrapper button:hover {
     transform: scale(1.1);
     background-image: linear-gradient(160deg, #008CBD, #008CBD 60%, #A952DF 60%, #A952DF);
-    text-shadow: black;
+    /*text-shadow: black;*/
     color: white;
     border-radius: 20px;
 }
@@ -121,14 +130,17 @@ main .button_wrapper button:hover {
 .description_wrapper {
     display: flex;
     flex-grow: 1;
+    flex-shrink: 1;
+    justify-content: center;
 }
 
 .description_wrapper .p1 {
-    padding-right: 1.25em;
+    padding-right: 1em;
+
 }
 
 .description_wrapper .p2 {
-    padding-left: 1.25em;
+    padding-left: 1em;
 }
 
 /*Contact Info
@@ -154,14 +166,108 @@ footer {
 
 .contact_text {
     display: block;
-    color: #4c3d6d;
+    color: #403459;
 }
 
 /*Responsive Styles
 -------------------------------- */
 
-@media (min-width: 45em) {
-    .wrapper {
-        min-height: calc(100vh - 5rem);
+/*@media (min-width: 45em) {*/
+/*    .wrapper {*/
+/*        min-height: calc(100vh - 5rem);*/
+/*    }*/
+/*}*/
+
+@media screen and (max-width: 1120px) {
+    * {
+        font: 22px/1.2 'Inconsolata', monospace;
+    }
+
+    nav {
+        padding-left: 2em
+    }
+
+    main .intro_wrapper h1 {
+        font: 75px/0 'Montserrat', sans-serif;
+        font-weight: 900;
+    }
+
+    .profile_wrapper {
+        padding-left: 2em;
+        padding-top: .8em;
+        padding-bottom: .8em
+    }
+
+    .description_wrapper .p2 {
+        padding-left: 0.3em
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    * {
+        font: 22px/1.2 'Inconsolata', monospace;
+    }
+
+    main .intro_wrapper h1 {
+        font: 50px/0 'Montserrat', sans-serif;
+        font-weight: 900;
+    }
+
+    footer {
+        margin-top: 50px
+    }
+}
+
+@media screen and (max-width: 640px) {
+    nav .nav_list {
+        padding-left: 0;
+    }
+
+    .button_wrapper .button_text {
+        font: 20px/1.2 'Inconsolata', monospace;
+        font-weight: 500;
+    }
+
+}
+
+@media screen and (max-width: 590px) {
+    * {
+        font: 20px/1.2 'Inconsolata', monospace;
+    }
+
+    main .intro_wrapper h1 {
+        font: 40px/0 'Montserrat', sans-serif;
+        font-weight: 900;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    * {
+        font: 18px/1.2 'Inconsolata', monospace;
+    }
+
+    main .intro_wrapper h1 {
+        font: 32px/0 'Montserrat', sans-serif;
+        font-weight: 900;
+    }
+
+    footer .contact_image {
+        width: 80px
+    }
+}
+
+@media screen and (max-width: 420px) {
+    * {
+        font: 18px/1.2 'Inconsolata', monospace;
+    }
+
+    main .intro_wrapper h1 {
+        font: 32px/0 'Montserrat', sans-serif;
+        font-weight: 900;
+    }
+
+    footer .contact_image {
+        width: 80px
     }
 }
