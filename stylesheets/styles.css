@@ -23,7 +23,7 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    /*justify-content: space-between;*/
+    justify-content: space-between;
 }
 
 img {
@@ -161,13 +161,18 @@ footer {
     margin: .5em;
     text-align: center;
     text-decoration: none;
+    transition: transform 0.2s ease-in-out
+}
 
+.contact_item:hover {
+    transform: scale(1.3);
 }
 
 .contact_text {
     display: block;
-    color: #403459;
+    color: #FFFFF3;
 }
+
 
 /*Responsive Styles
 -------------------------------- */
