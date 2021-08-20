@@ -82,7 +82,8 @@ nav img {
 
 .resume_main {
     max-width: 650px;
-    margin: 0 auto
+    margin: 0 auto;
+    padding-bottom: 1em;
 }
 
 .section_heading {
@@ -178,7 +179,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 5px;
-    /*padding-top: 2em;*/
+    padding-bottom: 1em;
     margin: 0 auto;
     justify-items: center;
     align-items: center;
