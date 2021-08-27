@@ -71,8 +71,12 @@ nav {
 }
 
 nav img {
-    width: 80px;
-    padding-right: 20px;
+    width: 100px;
+    transition: transform 0.2s ease-in-out;
+}
+
+nav img:hover {
+    transform: scale(1.2);
 }
 
 /*Profile
@@ -86,18 +90,17 @@ nav img {
     max-width: 650px;
     margin: 0 auto;
     padding-bottom: 1em;
+    padding-top: 1em
 }
 
-.aboutme_wrapper {
+.aboutme_wrapper, .section_heading {
     max-width: 1080px;
-    padding-top: .8em;
-    padding-bottom: .8em;
+    padding: .8em 1em;
     margin: auto auto
 }
 
 .section_heading {
-    text-align: center;
-    padding-top: .5em
+    text-align: left;
 }
 
 section .aboutme_image {
@@ -112,14 +115,14 @@ section .aboutme_image img {
     padding-bottom: .8em;
 }
 
-.section_heading h1 {
-    font: 60px/0 'Montserrat', sans-serif;
-    font-weight: 700;
+.section_heading h2 {
+    font: 40px/0 'Montserrat', sans-serif;
+    font-weight: 500;
     text-decoration: underline 0.15em rgba(0, 0, 0, 0);
     transition: text-decoration-color 300ms;
 }
 
-.section_heading h1:hover {
+.section_heading h2:hover {
     text-decoration-color: rgba(255, 255, 255, 1);
 }
 
@@ -194,7 +197,7 @@ main .button_wrapper button:hover {
     padding-left: 1em;
 }
 
-/*Contact Info
+/*contact Info
 ----------------------*/
 footer {
     width: 80%;
