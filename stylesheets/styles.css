@@ -71,7 +71,7 @@ nav {
 }
 
 nav img {
-    width: 100px;
+    width: 64px;
     transition: transform 0.2s ease-in-out;
 }
 
@@ -94,7 +94,7 @@ nav img:hover {
 }
 
 .aboutme_wrapper, .section_heading {
-    max-width: 1080px;
+    max-width: 800px;
     padding: .8em 1em;
     margin: auto auto
 }
@@ -103,16 +103,18 @@ nav img:hover {
     text-align: left;
 }
 
-section .aboutme_image {
-    max-width: 1080px;
-    padding-top: .8em;
-    padding-bottom: .8em;
+.aboutme_img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    transition: .5s ease;
+    margin: auto auto 4em;
 }
 
-section .aboutme_image img {
-    max-width: 1080px;
-    padding-top: .8em;
-    padding-bottom: .8em;
+.aboutme_img:hover {
+    box-shadow: 0 0 0 5px #fffff3;
+    transition: .5s ease;
 }
 
 .section_heading h2 {
